@@ -1,6 +1,6 @@
 # FK Bulk User Editor
 
-[![Coding standards](https://github.com/futurekings/fk-bulk-user-editor/actions/workflows/coding-standards.yml/badge.svg?branch=main)](https://github.com/futurekings/fk-bulk-user-editor/actions/workflows/coding-standards.yml)
+[![Coding standards](https://github.com/fk-digital/fk-bulk-user-editor/actions/workflows/coding-standards.yml/badge.svg?branch=main)](https://github.com/futurekings/fk-bulk-user-editor/actions/workflows/coding-standards.yml)
 
 Add a batch of users to one or more sites in a WordPress multisite network, with a chosen role, in one step.
 
