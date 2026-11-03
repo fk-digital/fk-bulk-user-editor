@@ -1,0 +1,30 @@
+{
+  "name": "futurekings/fk-bulk-user-editor",
+  "description": "Add a batch of users to one or more sites in a WordPress multisite network, with a chosen role, in one step.",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://futurekings.co.uk",
+  "authors": [
+    {
+      "name": "FutureKings",
+      "homepage": "https://futurekings.co.uk"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+    "phpcompatibility/phpcompatibility-wp": "^2.1",
+    "wp-coding-standards/wpcs": "^3.1"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  },
+  "scripts": {
+    "lint": "phpcs",
+    "lint:fix": "phpcbf"
+  }
+}

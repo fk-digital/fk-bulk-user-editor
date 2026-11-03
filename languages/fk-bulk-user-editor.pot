@@ -1,0 +1,137 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-03T15:27:06+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: fk-bulk-user-editor\n"
+
+#: fk-bulk-user-editor.php:53
+msgid "FK Bulk User Editor requires a WordPress multisite network and could not be activated."
+msgstr ""
+
+#: fk-bulk-user-editor.php:54
+msgid "Plugin activation error"
+msgstr ""
+
+#: includes/class-fk-bulk-user-editor.php:109
+msgid "Add to Sites…"
+msgstr ""
+
+#: includes/class-fk-bulk-user-editor.php:195
+#: includes/class-fk-bulk-user-editor.php:196
+#: includes/class-fk-bulk-user-editor.php:214
+#: includes/class-fk-bulk-user-editor.php:284
+msgid "Add Users to Sites"
+msgstr ""
+
+#: includes/class-fk-bulk-user-editor.php:217
+msgid "Sorry, you are not allowed to manage network users."
+msgstr ""
+
+#: includes/class-fk-bulk-user-editor.php:287
+msgid "No users were selected. Go back to the Users list, select some users, then choose \"Add to Sites…\" from the Bulk Actions dropdown."
+msgstr ""
+
+#: includes/class-fk-bulk-user-editor.php:288
+msgid "Back to Users"
+msgstr ""
+
+#: includes/class-fk-bulk-user-editor.php:296
+msgid "None of the selected users could be found."
+msgstr ""
+
+#. translators: %s: user display name
+#: includes/class-fk-bulk-user-editor.php:310
+#, php-format
+msgid "Add %s to the sites you choose below."
+msgstr ""
+
+#. translators: %s: number of users
+#: includes/class-fk-bulk-user-editor.php:316
+#, php-format
+msgid "Add this %s user to the sites you choose below:"
+msgid_plural "Add these %s users to the sites you choose below:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-fk-bulk-user-editor.php:329
+msgid "super admin"
+msgstr ""
+
+#: includes/class-fk-bulk-user-editor.php:341
+msgid "Role"
+msgstr ""
+
+#: includes/class-fk-bulk-user-editor.php:353
+msgid "Existing members"
+msgstr ""
+
+#: includes/class-fk-bulk-user-editor.php:357
+msgid "Change the role of users who are already members of a selected site"
+msgstr ""
+
+#: includes/class-fk-bulk-user-editor.php:360
+msgid "Leave unticked to only add users to sites they are not on yet. Ticking this will replace their current role on that site, which could demote an administrator."
+msgstr ""
+
+#: includes/class-fk-bulk-user-editor.php:365
+#: includes/class-fk-bulk-user-editor.php:368
+msgid "Sites"
+msgstr ""
+
+#: includes/class-fk-bulk-user-editor.php:372
+msgid "Select all"
+msgstr ""
+
+#: includes/class-fk-bulk-user-editor.php:389
+msgid "Add to Selected Sites"
+msgstr ""
+
+#: includes/class-fk-bulk-user-editor.php:480
+msgid "No users were added. Make sure at least one site was selected."
+msgstr ""
+
+#. translators: 1: number of users, 2: number of sites
+#: includes/class-fk-bulk-user-editor.php:488
+#, php-format
+msgid "Users processed: %1$s. Sites selected: %2$s."
+msgstr ""
+
+#. translators: %s: number of site memberships
+#: includes/class-fk-bulk-user-editor.php:496
+#, php-format
+msgid "%s membership added."
+msgid_plural "%s memberships added."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of site memberships
+#: includes/class-fk-bulk-user-editor.php:498
+#, php-format
+msgid "%s existing role changed."
+msgid_plural "%s existing roles changed."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of site memberships
+#: includes/class-fk-bulk-user-editor.php:500
+#, php-format
+msgid "%s skipped (already a member)."
+msgid_plural "%s skipped (already members)."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of site memberships
+#: includes/class-fk-bulk-user-editor.php:502
+#, php-format
+msgid "%s failed."
+msgid_plural "%s failed."
+msgstr[0] ""
+msgstr[1] ""

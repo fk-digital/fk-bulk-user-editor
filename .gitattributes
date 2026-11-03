@@ -1,0 +1,17 @@
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.gif binary
+*.zip binary
+
+# Excluded from `git archive` / GitHub release zips.
+/.editorconfig     export-ignore
+/.gitattributes    export-ignore
+/.github           export-ignore
+/.gitignore        export-ignore
+/CHANGELOG.md      export-ignore
+/composer.json     export-ignore
+/composer.lock     export-ignore
+/phpcs.xml.dist    export-ignore
+/README.md         export-ignore
