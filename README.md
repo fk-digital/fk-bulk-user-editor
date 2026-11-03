@@ -1,5 +1,7 @@
 # FK Bulk User Editor
 
+[![Coding standards](https://github.com/futurekings/fk-bulk-user-editor/actions/workflows/coding-standards.yml/badge.svg?branch=main)](https://github.com/futurekings/fk-bulk-user-editor/actions/workflows/coding-standards.yml)
+
 Add a batch of users to one or more sites in a WordPress multisite network, with a chosen role, in one step.
 
 WordPress multisite has no built-in way to do this. You either add each user to each site one by one, or rely on a single site's "Add Existing User" screen. FK Bulk User Editor adds an **Add to Sites…** option to the Bulk Actions dropdown on **Network Admin › Users**.
