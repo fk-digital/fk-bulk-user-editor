@@ -35,7 +35,7 @@ The plugin refuses to activate on a single-site install.
 
 ```bash
 cd wp-content/plugins
-git clone <repository-url> fk-bulk-user-editor
+git clone https://github.com/fk-digital/fk-bulk-user-editor.git fk-bulk-user-editor
 ```
 
 Then network activate it from **Network Admin › Plugins**, or with WP-CLI:
@@ -73,6 +73,8 @@ composer install
 composer lint        # check
 composer lint:fix    # auto-fix what can be fixed
 ```
+
+The same check runs on GitHub Actions ([`.github/workflows/coding-standards.yml`](.github/workflows/coding-standards.yml)) for every pull request and every push to `main`. Any violations are shown inline on the pull request diff.
 
 To regenerate the translation template:
 

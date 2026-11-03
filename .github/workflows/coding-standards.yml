@@ -1,0 +1,43 @@
+name: Coding standards
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+# Cancel an in-progress run when a newer commit is pushed to the same branch/PR.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  phpcs:
+    name: WPCS
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+          coverage: none
+          tools: cs2pr
+
+      - name: Install Composer dependencies
+        uses: ramsey/composer-install@v3
+
+      - name: Run PHPCS
+        # Checkstyle output is piped to cs2pr so violations show inline on the PR diff.
+        run: vendor/bin/phpcs -q --report-full --report-checkstyle=./phpcs-report.xml
+
+      - name: Annotate PR with violations
+        if: ${{ always() && hashFiles('phpcs-report.xml') != '' }}
+        run: cs2pr ./phpcs-report.xml --graceful-warnings
